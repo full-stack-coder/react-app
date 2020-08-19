@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import Albums from './Albums';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
+test('renders album header', () => {
+  const { getByText } = render(<Albums />);
+  const linkElement = getByText("List of Albums");
   expect(linkElement).toBeInTheDocument();
 });
